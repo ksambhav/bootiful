@@ -1,6 +1,6 @@
-import { TestBed } from '@angular/core/testing';
-import { RouterModule } from '@angular/router';
-import { AppComponent } from './app.component';
+import {TestBed} from '@angular/core/testing';
+import {RouterModule} from '@angular/router';
+import {AppComponent} from './app.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -23,7 +23,7 @@ describe('AppComponent', () => {
   it(`should have as title 'webapp'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('webapp');
+    expect(app.title).toEqual('bootiful');
   });
 
   it('should render title', () => {
