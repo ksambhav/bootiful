@@ -1,12 +1,13 @@
 <mat-sidenav-container class="sidenav-container">
     <mat-sidenav #drawer [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'" [mode]="(isHandset$ | async) ? 'over' : 'side'"
-                 [opened]="(isHandset$ | async) === false"
+                 (closed)="events.push('close!')" [opened]="(isHandset$ | async) === false"
                  class="sidenav"
                  fixedInViewport>
         <mat-toolbar>Bootiful</mat-toolbar>
         <mat-nav-list>
             <a href="/login" mat-list-item>Login</a>
             <a href="/register" mat-list-item>Register</a>
+            <a href="/home" mat-list-item>Home</a>
         </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content>
